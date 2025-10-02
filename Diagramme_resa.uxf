@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>36</y>
+      <w>108</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Profile
+--
+_id-profile_
+nom : String
+prenom : String
+numTel : int
+date_ncs : String
+email : String
+addresse: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>36</y>
+      <w>126</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Compte
+--
+_cpt-id_
+user_name : String
+mdp  : String
+sel : String
+etat : String  
+Role : String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>990</x>
+      <y>513</y>
+      <w>108</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Doc_PDF
+--
+_Doc_PDF-id_
+intitule : String
+chemin : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>0</y>
+      <w>117</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Actualite
+--
+_actualite-id_
+titre : String
+texte : String
+date_pub : Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>414</y>
+      <w>108</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Reservetion
+--
+_cpt-id_
+nom : String
+url_image : String
+jauge : String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>981</x>
+      <y>234</y>
+      <w>117</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Reunion
+--
+_Reunion-id_
+sujet : String 
+date : Datetime
+lieu : Stirng
+listeParticipants: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>99</x>
+      <y>81</y>
+      <w>315</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+associe &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>162</y>
+      <w>81</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1..*
+s'inscrir &gt;</panel_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>135</y>
+      <w>270</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1..1
+repend &gt;</panel_attributes>
+    <additional_attributes>20.0;260.0;20.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>531</y>
+      <w>180</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=0..1
+teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;60.0;160.0;60.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>459</y>
+      <w>198</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1..1
+possede &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>675</x>
+      <y>405</y>
+      <w>144</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Ressources
+--
+_Ressources-id_
+type : String
+listeMateriels : Doc_PDF
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>369</y>
+      <w>117</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+_Msg-id_
+email : String
+description : String
+code : String
+repense :String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>648</y>
+      <w>126</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Indisponibilite
+--
+_Disponibilite-id_
+etat : String
+commentaire : String
+date_deb : Date
+date_fin : Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>63</y>
+      <w>387</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..*
+publie &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;410.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>513</x>
+      <y>135</y>
+      <w>558</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=0..*
+participe &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;580.0;20.0;580.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1035</x>
+      <y>360</y>
+      <w>90</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..*
+possede &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>252</y>
+      <w>198</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>216</y>
+      <w>99</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>
+--
+_cpt-id_res-id_
+role : String
+date : Date
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>855</x>
+      <y>675</y>
+      <w>108</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Motif
+--
+_Motif-id_
+type : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>702</y>
+      <w>207</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=0..1
+a &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;210.0;20.0</additional_attributes>
+  </element>
+</diagram>
