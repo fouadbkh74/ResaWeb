@@ -59,3 +59,7 @@ Le hashage permet de stocker une empreinte non réversible des mots de passe.
 Exemple :
 ```sql
 SHA2(CONCAT(sel, motdepasse), 256)
+<img width="953" height="410" alt="Screenshot 2026-01-14 185445" src="https://github.com/user-attachments/assets/3640f787-ec85-4091-8e0a-e5770873d183" />
+
+<img width="949" height="303" alt="Screenshot 2026-01-14 185507" src="https://github.com/user-attachments/assets/64d1b483-aa99-4b34-aaf2-4b46d1046513" />
+
