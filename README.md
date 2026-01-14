@@ -3,7 +3,11 @@
 ## Introduction du projet
 Le projet **ResaWeb** est une application web développée en **PHP** avec le framework  
 **CodeIgniter**.  
-Son objectif est de fournir un **système de réservation complet** tout en appliquant les bonnes pratiques de :
+Son objectif est de fournir un **système de réservation complet** 
+
+<img width="940" height="229" alt="image" src="https://github.com/user-attachments/assets/051efe79-7cce-42ce-b67f-1dc6b43e10e1" />
+
+tout en appliquant les bonnes pratiques de :
 
 - Modélisation UML
 - Conception et gestion de bases de données
