@@ -5,7 +5,8 @@ Le projet **ResaWeb** est une application web développée en **PHP** avec le fr
 **CodeIgniter**.  
 Son objectif est de fournir un **système de réservation complet** 
 
-<img width="940" height="229" alt="image" src="https://github.com/user-attachments/assets/051efe79-7cce-42ce-b67f-1dc6b43e10e1" />
+<img width="889" height="371" alt="Screenshot 2026-01-14 185917" src="https://github.com/user-attachments/assets/4f8a5b2a-641f-4d51-988f-0fc151918652" />
+
 
 tout en appliquant les bonnes pratiques de :
 
@@ -52,15 +53,16 @@ Les opérations **CRUD** représentent les actions essentielles sur les données
 - **Update** : mise à jour
 - **Delete** : suppression
 <img width="953" height="410" alt="Screenshot 2026-01-14 185445" src="https://github.com/user-attachments/assets/3640f787-ec85-4091-8e0a-e5770873d183" />
-<img width="949" height="303" alt="Screenshot 2026-01-14 185507" src="https://github.com/user-attachments/assets/64d1b483-aa99-4b34-aaf2-4b46d1046513" />
 ---
 
 ## Sécurité : Hashage des mots de passe
 Le hashage permet de stocker une empreinte non réversible des mots de passe.  
 Exemple :
-```sql<img width="953" height="410" alt="Screenshot 2026-01-14 185445" src="https://github.com/user-attachments/assets/3640f787-ec85-4091-8e0a-e5770873d183" />
+sql SHA2(CONCAT(sel, motdepasse), 256)
+
+##Annex : DashBoard
 <img width="949" height="303" alt="Screenshot 2026-01-14 185507" src="https://github.com/user-attachments/assets/64d1b483-aa99-4b34-aaf2-4b46d1046513" />
-SHA2(CONCAT(sel, motdepasse), 256)
+
 
 
 
